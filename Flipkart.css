@@ -38,6 +38,11 @@ header {
     font-weight: 600;
     font-size: 11px;
     margin-top: 1px;
+    transition: text-decoration 1ms;
+}
+
+#name .plus:hover {
+    text-decoration: underline;
 }
 
 #name .plus p {
@@ -85,6 +90,22 @@ header {
     cursor: pointer;
 }
 
+#login img {
+    position: absolute;
+    width: 115px;
+    height: 54px;
+    margin: 12px -118px;
+    opacity: 0;
+    transition: margin 1ms forwards, opacity, width, height;
+}
+
+#login img:hover {
+    margin: 47px -177px;
+    opacity: 1;
+    width: 237px;
+    height: 374px;
+}
+
 #seller {
     margin: 17px 8px 15px 40px;
 }
@@ -97,10 +118,36 @@ header {
 }
 
 #more {
+    display: flex;
     margin: 17px 15px 15px 40px;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     cursor: pointer;
+}
+
+#more p {
+    transition: rotate 1ms;
+}
+
+#more p:hover {
+    transform: rotate(180deg);
+}
+
+#more img {
+    position: absolute;
+    width: 115px;
+    height: 54px;
+    margin: 3px -28px;
+    opacity: 0;
+    transition: margin 1ms forwards, opacity, width, height;
+}
+
+#more img:hover {
+    margin: 47px -177px;
+    opacity: 1;
+    margin: 30px -96px;
+    width: 239px;
+    height: 262px;
 }
 
 #cart a {
@@ -154,6 +201,11 @@ header {
     font-family: 'Times New Roman', Times, serif;
     margin: 0px 20px 0px 52px;
     color: black;
+    transition: color 1ms;
+}
+
+#items h1:hover {
+    color: #2874f0;
 }
 
 #box {
@@ -325,6 +377,11 @@ header {
 
 #left .down .product img {
     margin: 20px;
+    transition: scale 1ms;
+}
+
+#left .down .product img:hover {
+    transform: scale(1.04);
 }
 
 #left .down .text {
@@ -380,6 +437,11 @@ h1 {
 
 .container3 .down .product img {
     margin: 25px 20px 10px 20px;
+    transition: scale 1ms;
+}
+
+.container3 .down .product img:hover {
+    transform: scale(1.04);
 }
 
 .container3 .down .text {
